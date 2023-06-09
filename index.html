@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+    <div class="main">
+        <div class="head">Letter Finder</div>
+    
+        <div class="body">
+            <form>
+                <input type="text" name="name" class="form-control text-center" placeholder="Your Name" id="name" required>
+            </form>
+    
+            <button class="btn" id="btn1" >FIND</button>
+         
+            <div>
+                <input type="text"  id="letter" class="letter" placeholder="Your Perfect match fiirst letter will display here!">
+            </div>
+            <hr>
+    <div>  
+        <h1> Wish you great future ahead.</h1>
+    </div>
+
+        </div>
+    </div>
+
+<script>
+    console.log("hi");
+    alert("Enter capital letters only");
+    const find=document.getElementById("btn1");
+    find.addEventListener("click", main);
+    function main() {
+        var getname = document.getElementById("name").value;
+        var final = document.getElementById("letter");
+        var lett = getname.charAt(0);
+        console.log(lett);
+        var Saggittarius=['B','F','D'];
+        var Virgo=['P','T'];
+        var Cancer=['D','H'];
+        var Aquarius=['G','S'];
+        var Capricorn=['K','J'];
+        var Pisces=['D','C','Z','T'];
+        var Aries=['A','L','E','I','O'];
+        var Gemini=['K','C','G','Q'];
+        var Leo=['M','T'];
+        var Libra=['R','T'];
+        var Taurus=['B','V','U','W'];
+        var Scorpio=['N','Y'];
+        if (lett=='B' || lett=='F' || lett=='D') {
+            const ransag=Math.floor(Math.random()*Saggittarius.length);
+            var soulmate=Saggittarius[ransag];
+            final.value=soulmate;
+            exit;
+        } 
+        else if(lett=='P' || lett=='T' ){
+            const ranvir=Math.floor(Math.random()*Virgo.length);
+            var soulmate=Virgo[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+  else if(lett=='D' || lett=='H' ){
+    const rancan=Math.floor(Math.random()*Cancer.length);
+            var soulmate=Cancer[rancan];
+            final.value=soulmate;
+            exit;
+  }
+  else if(lett=='G' || lett=='S' ){
+    const ranvir=Math.floor(Math.random()*Aquarius.length);
+            var soulmate=Aquarius[ranvir];
+            final.value=soulmate;
+            exit;
+  }
+    
+    else if(lett=='K' || lett=='J' ){
+        const ranvir=Math.floor(Math.random()*Capricorn.length);
+            var soulmate=Capricorn[ranvir];
+            final.value=soulmate;
+            exit;
+    }
+    else if(lett=='D' || lett=='T' || lett=='Z' || lett=='C' ){
+            const ranvir=Math.floor(Math.random()*Pisces.length);
+            var soulmate=Pisces[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+        else if(lett=='A' || lett=='L' || lett=='E' || lett=='I' || lett=='O'){
+            const ranvir=Math.floor(Math.random()*Aries.length);
+            var soulmate=Aries[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+        else if(lett=='K' || lett=='C' || lett=='G' || lett=='Q' ){
+            const ranvir=Math.floor(Math.random()*Gemini.length);
+            var soulmate=Gemini[ranvir];
+            final.value=soulmate;  exit;
+
+        }
+        else if(lett=='M' || lett=='T' ){
+            const ranvir=Math.floor(Math.random()*Leo.length);
+            var soulmate=Leo[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+        else if(lett=='R' || lett=='T' ){
+            const ranlib=Math.floor(Math.random()*Libra.length);
+            var soulmate=Libra[ranlib];
+            final.value=soulmate;
+            exit;
+        }
+        else if(lett=='B' || lett=='V' || lett=='U' || lett=='M' ){
+            const ranvir=Math.floor(Math.random()*Taurus.length);
+            var soulmate=Taurus[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+    
+        else if(lett=='N' || lett=='Y' ){
+            const ranvir=Math.floor(Math.random()*Scorpio.length);
+            var soulmate=Scorpio[ranvir];
+            final.value=soulmate;
+            exit;
+        }
+        else{
+        final.value="You are lucky to have anyone you wish for in your life";
+        exit; }
+    }
+</script>
+</body>
+</html>
